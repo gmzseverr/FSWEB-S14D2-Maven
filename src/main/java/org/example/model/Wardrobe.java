@@ -1,6 +1,7 @@
 package org.example.model;
 
 
+
 public class Wardrobe {
     private int width;
     private int height;
@@ -26,5 +27,14 @@ public class Wardrobe {
 
     public void add(){
         System.out.println("Wardrobe added into Bedroom.");
+    }
+
+    @Override
+    public String toString() {
+        return "Wardrobe{" +
+                "width=" + width +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
     }
 }

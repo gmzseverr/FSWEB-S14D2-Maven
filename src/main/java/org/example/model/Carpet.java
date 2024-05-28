@@ -8,7 +8,7 @@ public class Carpet {
     private int height;
     private PaintColor color;
 
-    public Carpet(PaintColor color, int height, int width) {
+    public Carpet( int height, int width, PaintColor color) {
         this.color = color;
         this.height = height;
         this.width = width;
@@ -27,5 +27,14 @@ public class Carpet {
     }
     public void lying(){
         System.out.println("Carpet is lying on Bedroom floor.");
+    }
+
+    @Override
+    public String toString() {
+        return "Carpet{" +
+                "width=" + width +
+                ", height=" + height +
+                ", color=" + color +
+                '}';
     }
 }

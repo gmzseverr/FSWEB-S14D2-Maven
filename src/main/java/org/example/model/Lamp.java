@@ -1,5 +1,4 @@
 package org.example.model;
-
 import org.example.model.enums.LampType;
 
 public class Lamp {
@@ -14,6 +13,8 @@ public class Lamp {
         this.style = style;
     }
 
+
+
     public LampType getStyle() {
         return style;
     }
@@ -27,9 +28,16 @@ public class Lamp {
     }
 
     public void turnOn(){
+
         System.out.println("Lamp is being turned on.");
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "style=" + style +
+                ", battery=" + battery +
+                ", globRating=" + globRating +
+                '}';
+    }
 }
